@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="style.css" rel = "stylesheet">
+        <script src="main.js"> </script>
+        <script src="map_api.js"></script>
+        <script src="dist/js/map-icons.js"></script>
+        <title>Husky Navigate</title>
+    </head>
+    <body> 
+        <header>
+            <h1>Husky Navigate</h1>
+        </header>
+        <nav>
+            <button type="button" class="collapse">Transportation</button>
+            <form method="get" post="map-icons.js">
+                <fieldset>
+                    <div class="content">
+                        <input type="checkbox" id="bike"> Bike Storage</p>
+                        <input type="checkbox" id="bus-stop">Bus Stop</p>
+                    </div>
+                </fieldset>
+            </form>
+            <button type="button" class="collapse">Food</button>
+            <form method="get" post="map-icons.js">
+                <fieldset>                    <div class="content">
+                        <p id="bike"> Cafe</p>
+                        <p id="bus-stop">Resturant</p>
+                        <p id="microwave">Microwave</p>
+                    </div>
+                </fieldset>
+            </form>
+            <button type="button" class="collapse">Study Spaces</button>
+            <form type="button" class >
+            <div class="content">
+                <p id="study-space">Study Spaces</p>
+            </div>
+        </nav>
+        <div id="map"></div>
+        <footer>
+        </footer>
+    </body>
+</html>
