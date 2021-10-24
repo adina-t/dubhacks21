@@ -8,14 +8,25 @@ h1 {
     text-shadow:  10px 10px 10px#85754D;
     color: #4B2E83;
     display: flex;
-
 }
 
 header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: silver;
     margin-bottom: 10px;
+}
+
+button {
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
 }
 
   #map{
@@ -25,12 +36,11 @@ header{
 
   nav{
       display: flex;
-      justify-content: center;
+      justify-content: left;
   }
 
   .collapse {
     display:flex;
-    width: 32%;
     margin-right: 5px;
     padding: 18px;
     background-color:#4B2E83;
@@ -42,14 +52,21 @@ header{
     font-size: 15px;
     margin-bottom: 5px;
   }
-  
+
   .active, .collapsible:hover {
     background-color: white;
   }
-  
+
+  .collapse:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    color: #fdfdfd;
+    border: 1px solid #be75e9;
+    background: #ca91f0;
+    transition: 1s;
+}
+
   .content {
-    padding: 18px;
-    display: none;
+    padding: none;
     overflow: hidden;
     background-color: #f1f1f1;
   }

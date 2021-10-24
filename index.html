@@ -3,39 +3,45 @@
 <html>
     <head>
         <link href="style.css" rel = "stylesheet">
-        <script src="main.js"> </script>
+        <script src="script.js"> </script>
         <script src="map_api.js"></script>
-        <script src="dist/js/map-icons.js"></script>
+        <script src="map-icons.js"></script>
         <title>Husky Navigate</title>
     </head>
-    <body> 
+    <body>
         <header>
             <h1>Husky Navigate</h1>
         </header>
         <nav>
-            <button type="button" class="collapse">Transportation</button>
-            <form method="get" post="map-icons.js">
-                <fieldset>
-                    <div class="content">
-                        <input type="checkbox" id="bike"> Bike Storage</p>
-                        <input type="checkbox" id="bus-stop">Bus Stop</p>
-                    </div>
-                </fieldset>
-            </form>
-            <button type="button" class="collapse">Food</button>
-            <form method="get" post="map-icons.js">
-                <fieldset>                    
-                    <div class="content">
-                        <input type="checkbox" id="cafe"> Cafe</p>
-                        <input type="checkbox" id="resturant">Resturant</p>
-                        <input type="checkbox" id="microwave">Microwave</p>
-                    </div>
-                </fieldset>
-            </form>
+            <div>
+                <button type="button" class="collapse">Transportation</button>
+                <form method="get" post="map-icons.js" class="content">
+                    <input type="checkbox" id="transportation1" name="transportation1" value="storage">
+                    <label for="transportation1">Bike Storage</label>
+                    <br>
+                    <input type="checkbox" id="transportation2" name="transportation2" value="bus-stop">
+                    <label for="transportation2">Bus Stop</label>
+                </form>
+            </div>
+            <div>
+                <button type="button" class="collapse">Food</button>
+                <form method="get" post="map-icons.js" class="content">
+                    <input type="checkbox" id="food-1" name="food-1" value="cafe">
+                    <label for="food-1">Cafe</label>
+                    <br>
+                    <input type="checkbox" id="food-2" name="food-2" value="resturant">
+                    <label for="food-2"> Restaurant </label>
+                    <br>
+                    <input type="checkbox" id="food-3" name="food-3" value="microwave">
+                    <label for="food-3"> Microwave </label>
+                </form>
+            </div>
+            <div>
             <button type="button" class="collapse">Study Spaces</button>
-            <form type="button" class >
-            <div class="content">
-                <p id="study-space">Study Spaces</p>
+                <form method="get" post="map-icons.js" class="content">
+                    <input type="checkbox" id="name-space1" name="study-space1" value="study-space">
+                    <label for="name-space1"> Study Space </label>
+                </form>
             </div>
         </nav>
         <div id="map"></div>
